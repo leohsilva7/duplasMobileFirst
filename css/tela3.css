@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.header a {
+    text-decoration: none;
+    color: #8a9baf;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Raleway";
+}
+
+.logo img {
+    width: 22px;
+    height: 22px;
+}
+
+.logo h1 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #242731;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 0 20px 20px 20px;
+    flex-grow: 1;
+}
+
+.register-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 24px;
+}
+
+.register-text h2 {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    color: #242731;
+}
+
+.register-text p {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #575F6E;
+}
+
+.progress-steps {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.step {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #dbe2f0;
+}
+
+.step.active {
+    background-color: #007bff;
+}
+
+.info-box {
+    background-color: #f0f7ff;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.info-box div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.info-box .phone-number {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #242426;
+}
+
+.info-box .status {
+    font-family: "Poppins";
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #28a745;
+}
+
+.form-container {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 4px;
+}
+
+.form-group label {
+    display: block;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #242426;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #dde2e7;
+    padding: 10px 0;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #242731;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    border-color: #007bff;
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper .eye-icon {
+    position: absolute;
+    right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #8a9baf;
+}
+
+.password-helper {
+    font-family: "Poppins";
+    font-size: 12px;
+    line-height: 16px;
+    color: #34C759;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.register-btn {
+    width: 90%;
+    margin-top: 16px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    background-color: #007AFF;
+}
+.register-btn a{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: "Poppins";
+    color: #ffffff;
+    
+}
+.register-btn:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (min-width: 850px) {
+    .header {
+        padding: 30px;
+    }
+
+    .form-container {
+        padding: 40px;
+    }
+
+    .register-btn {
+        width: auto;
+        padding: 14px 48px;
+        align-self: center;
+    }
+}

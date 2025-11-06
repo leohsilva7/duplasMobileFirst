@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-family: "Raleway";
+}
+.logo img{
+    width: 22px;
+    height: 22px;
+}
+.logo h1{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #242731;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.progress-steps {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.step {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #dbe2f0;
+}
+
+.step.active {
+    background-color: #007bff;
+}
+.register-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.register-text h2{
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    color: #242731;
+}
+.register-text p{
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #575F6E;
+}
+.privacy-notification {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #F0F2F4;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 24px;
+}
+.privacy-notification .icon {
+    display: inline-block;
+    background-color: #e9ecef;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+}
+.privacy-notification p {
+    flex-grow: 1;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.4;
+}
+.privacy-notification .close-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #888;
+    cursor: pointer;
+}
+.privacy-notification .close-btn:hover {
+    color: #333;
+}
+.form-container {
+    margin-top: 32px;
+}
+.form-container label {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+.phone-input-wrapper {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    gap: 16px;
+}
+.phone-input-wrapper select {
+    border: none;
+    padding: 12px 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%207.5L10%2012.5L15%207.5%22%20stroke%3D%22%23666%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    padding-right: 30px;
+}
+.phone-input-wrapper input[type="tel"] {
+    border: none;
+    padding: 12px 14px;
+    font-size: 1rem;
+    flex-grow: 1;
+    outline: none;
+}
+.phone-input-wrapper:focus-within {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+.send-code-btn {
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin: 24px auto 0 auto;
+    padding: 12px 32px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.send-code-btn a{
+    text-decoration: none;
+    color: #242731;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.send-code-btn:hover {
+    background-color: #f7f7f7;
+}
+@media screen and (min-width: 850px) {
+    .header{
+        padding: 30px;
+    }
+    .form-container{
+        padding: 50px;
+        border: 1px solid #E2E4E5;
+        border-radius: 8px;
+        gap: 32px;
+    }
+}

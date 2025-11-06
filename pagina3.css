@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.progress-container {
+    padding: 24px 20px 0 20px;
+}
+.progress-dots {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #E0E2E7;
+}
+.dot.active {
+    background-color: #0d6efd;
+}
+
+.sub {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 28px;
+    padding: 24px 20px;
+}
+.sub p {
+    color: #575F6E;
+    font-family: "Roboto";
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 20px;
+    margin: 24px 20px 0 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #E0E2E7;
+}
+.form h3 {
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 600;
+}
+.form p {
+    color: #575F6E;
+    font-family: "Poppins";
+    font-size: 14px;
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
+.sobrenome {
+    font-family: "Poppins";
+    font-size: 14px;
+    margin-top: 16px;
+}
+.sobrenome p {
+    color: #575F6E;
+    font-family: "Poppins";
+    font-size: 14px;
+    margin: 0 0 8px 0;
+}
+.sobrenome h4 {
+    font-family: "Poppins";
+    font-size: 18px;
+    color: #242426;
+    margin-top: 10px;
+    min-height: 27px;
+}
+
+.date, .place {
+    font-family: "Poppins";
+    font-size: 14px;
+    margin-top: 16px;
+}
+.date p, .place p {
+    color: #575F6E;
+    font-family: "Poppins";
+    font-size: 14px;
+    margin: 0 0 8px 0;
+}
+.date h4, .place h4 {
+    font-family: "Poppins";
+    font-size: 18px;
+    color: #242426;
+    margin-top: 0;
+}
+
+.linhan {
+    width: 100%;
+    border-top: 1px solid #BBBFC1;
+    margin: 3px;
+}
+
+.input-com-seta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.seta-dropdown {
+    font-size: 12px;
+    color: #242426;
+    cursor: pointer;
+}
+
+.birth-info-row {
+    display: block;
+}
+
+.button-container {
+    padding: 24px 20px;
+    text-align: center;
+}
+
+.go-next-btn {
+    width: 100%;
+    padding: 16px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #242426;
+    background-color: #ffffff;
+    border: 1px solid #BBBFC1;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.go-next-btn:hover {
+    background-color: #f9f9f9;
+}
+.arrow-icon {
+    font-size: 20px;
+}
+
+.save-btn {
+    width: 100%;
+    padding: 16px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #0d6efd;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.save-btn:hover {
+    background-color: #0b5ed7;
+}
+.save-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+@media (min-width: 768px) {
+    body {
+        background-color: #F8F9FB;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        padding: 40px 20px;
+    }
+
+    .main-content-wrapper {
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        width: 100%;
+        max-width: 700px;
+        padding-bottom: 40px;
+    }
+
+    .header {
+        padding: 24px 40px;
+        border-bottom: 1px solid #E0E2E7;
+    }
+    .header .logo {
+        padding: 0;
+    }
+    .header .logo h3 {
+        font-size: 18px;
+        color: #242426;
+    }
+    .header > div:last-child {
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        background-image: url('./imgs/close-icon.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .header > div:last-child img {
+        display: none;
+    }
+
+    .progress-container {
+        padding: 24px 40px 0 40px;
+    }
+    .progress-dots {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .sub {
+        align-items: flex-start;
+        text-align: left;
+        padding: 40px 40px 24px 40px;
+    }
+    .sub h2 {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+    .sub p {
+        font-size: 15px;
+        margin-top: 0;
+    }
+
+    .form {
+        padding: 24px 40px;
+        background-color: #fcfcfc;
+        border-top: 1px solid #E0E2E7;
+        border-bottom: 1px solid #E0E2E7;
+        margin: 24px 0 0 0;
+        border-radius: 0;
+        box-shadow: none;
+        border-left: none;
+        border-right: none;
+    }
+    .form h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+    .form p {
+        font-size: 13px;
+        margin-bottom: 24px;
+        margin-top: 0;
+    }
+
+    .sobrenome {
+        padding: 0;
+        margin-top: 20px;
+    }
+    .sobrenome p {
+        font-size: 13px;
+        color: #575F6E;
+    }
+    .sobrenome h4 {
+        font-size: 16px;
+        padding: 0;
+        margin-top: 8px;
+    }
+
+    .linhan {
+        margin: 8px 0;
+    }
+
+    .date, .place {
+        padding: 0;
+        margin-top: 20px;
+    }
+    .date p, .place p {
+        font-size: 13px;
+        color: #575F6E;
+        margin-bottom: 8px;
+    }
+
+    .birth-info-row {
+        display: flex;
+        gap: 20px;
+    }
+    .birth-info-row .date,
+    .birth-info-row .sobrenome {
+        flex: 1;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .date .input-com-seta, .place .input-com-seta {
+        padding: 0;
+        margin-top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #E0E2E7;
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+    }
+
+    .date .linhan, .place .linhan,
+    .birth-info-row .date .linhan,
+    .birth-info-row .sobrenome .linhan {
+        display: none;
+    }
+
+    .form > .sobrenome > .linhan,
+    .form > .date > .linhan {
+         display: none;
+    }
+
+    .form > .sobrenome h4 {
+        border-bottom: 1px solid #E0E2E7;
+        padding-bottom: 8px;
+    }
+    .form > .sobrenome .linhan {
+        display: none;
+    }
+
+    .button-container {
+        padding: 40px 40px 0 40px;
+        border-top: 1px solid #E0E2E7;
+        margin-top: 40px;
+    }
+
+    .go-next-btn, .save-btn {
+        max-width: 200px;
+        margin: 0 auto;
+        padding: 14px 24px;
+        font-size: 15px;
+    }
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}

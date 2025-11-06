@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #ffffff; 
+    font-family: "Poppins", sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.sub {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 32px;
+    padding: 0 20px; 
+}
+
+.sub p {
+    color: #575F6E;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.checkbox-container {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+
+
+.linha {
+    width: 100%;
+    border-top: 1px solid #BBBFC1;
+    margin: 24px 0;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 20px; 
+    margin: 0 20px; 
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #E0E2E7;
+}
+
+.form h3 {
+    font-family: "Poppins";
+    font-size: 20px;
+}
+
+.form p {
+    color: #575F6E;
+    font-family: "Poppins";
+    font-size: 14px;
+    margin-bottom: 16px; 
+}
+
+.nome {
+    font-family: "Poppins";
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.nome h4 {
+    font-family: "Poppins";
+    font-size: 18px;
+    color: #242426;
+    margin-top: 10px;
+}
+
+.sobrenome {
+    font-family: "Poppins";
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.sobrenome h4 {
+    font-family: "Poppins";
+    font-size: 18px;
+    color: #242426;
+    margin-top: 10px;
+}
+
+.date {
+    font-family: "Poppins";
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.date h4 {
+    font-family: "Poppins";
+    font-size: 18px;
+    color: #242426;
+    padding: 0;
+    margin-top: 0;
+}
+
+.place {
+    font-family: "Poppins";
+    font-size: 14px;
+
+    margin-top: 16px;
+}
+
+.place h4 {
+    font-family: "Poppins";
+    font-size: 18px;
+    color: #242426;
+    padding: 0;
+    margin-top: 0;
+}
+
+.linhan {
+    width: 100%;
+    border-top: 1px solid #BBBFC1;
+    margin: 3px;
+}
+
+.input-com-seta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 10px;
+}
+
+.seta-dropdown {
+    font-size: 12px;
+    color: #242426;
+    cursor: pointer;
+}
+
+
+.itin-box {
+    background-color: #F3F9FF;
+    padding: 24px 20px;
+    margin: 24px 20px 0 20px; 
+    font-family: "Poppins", sans-serif;
+    border-radius: 12px; 
+}
+
+.itin-number {
+    font-size: 18px;
+    font-weight: 500;
+    color: #242426;
+    margin-bottom: 8px;
+}
+
+.itin-label {
+    font-size: 14px;
+    color: #575F6E;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.itin-label .checkmark {
+    color: #575F6E;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button-container {
+    padding: 24px 20px;
+    text-align: center;
+}
+
+
+@media (min-width: 768px) {
+    body {
+        background-color: #F8F9FB;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        padding: 40px 20px;
+    }
+
+    .main-content-wrapper {
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        width: 100%;
+        max-width: 700px;
+        padding-bottom: 40px;
+        margin: 0; 
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 40px;
+        border-bottom: 1px solid #E0E2E7;
+    }
+
+    .header .logo {
+        padding: 0;
+    }
+
+    .header .logo h3 {
+        font-size: 18px;
+        color: #242426;
+    }
+
+    .header > div:last-child {
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        background-image: url('./imgs/close-icon.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .header > div:last-child img {
+        display: none;
+    }
+
+    .progress-dots {
+        display: flex;
+        gap: 8px;
+        margin-left: 80px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #E0E2E7;
+    }
+
+    .dot.active {
+        background-color: #0d6efd;
+    }
+
+    .sub {
+        align-items: flex-start;
+        text-align: left;
+        padding: 40px 40px 24px 40px;
+    }
+
+    .sub h2 {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+    .sub p {
+        font-size: 15px;
+        margin-bottom: 24px;
+    }
+
+    .checkbox-container {
+        padding: 0;
+        margin-left: 0;
+        margin-top: 0; 
+    }
+
+    .linha {
+        display: none;
+    }
+
+    .form {
+        padding: 24px 40px;
+        background-color: #fcfcfc;
+        border-top: 1px solid #E0E2E7;
+        border-bottom: 1px solid #E0E2E7;
+        margin: 24px 0 0 0;
+        border-radius: 0;
+        box-shadow: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .form h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+
+    .form p {
+        font-size: 13px;
+        margin-bottom: 24px;
+    }
+
+    .sobrenome {
+        padding: 0; /* Resetado */
+        margin-top: 20px;
+    }
+
+    .sobrenome p {
+        font-size: 13px;
+        color: #575F6E;
+    }
+
+    .sobrenome h4 {
+        font-size: 16px;
+        padding: 0;
+        margin-top: 8px;
+    }
+
+    .linhan {
+        margin: 8px 0;
+    }
+
+    .date, .place {
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .date p, .place p {
+        font-size: 13px;
+        color: #575F6E;
+        margin-bottom: 8px;
+    }
+
+    .birth-info-row {
+        display: flex;
+        gap: 20px;
+   
+    }
+
+    .date, .place {
+        flex: 1;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .date .input-com-seta, .place .input-com-seta {
+        padding: 0;
+        margin-top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #E0E2E7;
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+    }
+
+    .date .linhan, .place .linhan {
+        display: none;
+    }
+
+    .itin-box {
+        background-color: transparent;
+        padding: 24px 40px;
+        margin: 32px 0 0 0; 
+        border: none;
+        border-radius: 0; 
+    }
+
+    .itin-number {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 4px;
+    }
+
+    .itin-label {
+        font-size: 14px;
+    }
+
+    .button-container {
+        padding: 40px 40px 0 40px;
+        border-top: 1px solid #E0E2E7;
+        margin-top: 40px;
+    }
+
+    .go-next-btn {
+        max-width: 200px;
+        margin: 0 auto;
+        padding: 14px 24px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+  body {
+    background-color: #ffffff;
+  }
+
+  .form {
+    padding: 24px 20px;
+  }
+
+  .form h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .form p {
+    font-size: 13px;
+    color: #575F6E;
+    margin-bottom: 24px;
+  }
+
+  .nome, .sobrenome, .date, .place {
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .nome p, .sobrenome p, .date p, .place p {
+    font-size: 13px;
+    color: #575F6E;
+    margin-bottom: 8px;
+  }
+
+  .nome h4, .sobrenome h4, .date h4, .place h4 {
+    font-size: 16px;
+    color: #242426;
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+  }
+
+  .linhan {
+    border-top: 1px solid #E0E2E7;
+    margin-top: 8px;
+  }
+
+  .input-com-seta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    font-family: "Poppins";
+    font-size: 16px;
+    color: #242426;
+    border-bottom: 1px solid #E0E2E7;
+    padding-bottom: 8px;
+  }
+
+  .seta-dropdown {
+    font-size: 12px;
+    color: #242426;
+  }
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
