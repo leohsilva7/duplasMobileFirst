@@ -232,6 +232,7 @@ body {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.2s, box-shadow 0.2s;
+    text-align: center;
 }
 .confirm-btn a{
     text-decoration: none;

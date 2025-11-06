@@ -208,7 +208,7 @@ body {
 }
 
 .register-btn {
-    width: 90%;
+    width: 100%;
     margin-top: 16px;
     padding: 14px;
     border: none;
@@ -216,6 +216,7 @@ body {
     cursor: pointer;
     transition: background-color 0.2s;
     background-color: #007AFF;
+    text-align: center;
 }
 .register-btn a{
     text-decoration: none;
